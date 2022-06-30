@@ -1,6 +1,3 @@
-#install pyTelegramBotAPI
-#and import necessary libs for building the telegram StyleTransfer bot
-
 import telebot
 from pathlib import Path
 import os
