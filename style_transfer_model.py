@@ -14,7 +14,6 @@ print(device)
 cnn = models.vgg19(pretrained=True).features.to(device).eval()
 
 class ContentLoss(nn.Module):
-
     def __init__(self, target,):
         super(ContentLoss, self).__init__()
         self.target = target.detach()
@@ -24,7 +23,6 @@ class ContentLoss(nn.Module):
         return input
 
 class StyleLoss(nn.Module):
-
     def __init__(self, target_feature):
         super(StyleLoss, self).__init__()
         self.target = self.gram_matrix(target_feature).detach()

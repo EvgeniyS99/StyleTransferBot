@@ -90,3 +90,4 @@ def get_style_photo(message):
     for file in os.listdir(dir)[1:]:
         os.remove('./MyDrive/photos' + '/' + file) # remove content and style photos
 
+bot.polling()
